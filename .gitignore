@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Models and data
+backend/models/
+testing/data/
+testing/codesearchnet_data/
+testing/scripts/data/
+testing/scripts/results/
+*.pkl
+*.joblib
+
+# Testing artifacts (experiments only)
+testing/scripts/__pycache__/
+testing/scripts/*/__pycache__/
+
+# Node
+node_modules/
+.next/
+out/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend build artifacts (but track the source code)
+frontend/client/node_modules/
+frontend/client/.next/
+frontend/client/out/
+frontend/client/*.log
+
+# Documentation builds
+docs_site/site/
+
+# Environment
+.env
+.env.local
+
