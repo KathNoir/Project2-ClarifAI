@@ -1,0 +1,72 @@
+{
+  "config": {
+    "max_new_tokens": 64,
+    "beam_width": 3,
+    "algorithms": [
+      "markov_greedy",
+      "a_star_beam"
+    ]
+  },
+  "totals": {
+    "samples": 1,
+    "winners": {
+      "markov_greedy": 1,
+      "a_star_beam": 0
+    }
+  },
+  "statistics": {
+    "markov_greedy": {
+      "avg_adjusted_score": 2.4375,
+      "avg_runtime_ms": 0.07139996159821749,
+      "avg_quality_score": 0.4875,
+      "termination_rate": 0.0
+    },
+    "a_star_beam": {
+      "avg_adjusted_score": -5.541101333982544,
+      "avg_runtime_ms": 12328.053900040686,
+      "avg_quality_score": 0.4666666666666666,
+      "termination_rate": 1.0
+    }
+  },
+  "samples": [
+    {
+      "index": 1,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 7.978601333982544,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `def` routine handles around `def` and `for`. Document scenarios where `def`, `for`, and `in` evolve to keep the comment actionable.",
+          "token_count": 21,
+          "log_probability": 0.0,
+          "quality_score": 0.4875,
+          "adjusted_score": 2.4375,
+          "runtime_ms": 0.07139996159821749,
+          "num_expansions": 1,
+          "terminated": false,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `def` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.4666666666666666,
+          "adjusted_score": -5.541101333982544,
+          "runtime_ms": 12328.053900040686,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    }
+  ]
+}
