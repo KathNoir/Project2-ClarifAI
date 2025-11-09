@@ -1,0 +1,14 @@
+{
+  "beam_width": 5,
+  "target_length": 24,
+  "use_semantic_heuristic": true,
+  "future_window": 5,
+  "base_weights": {
+    "length": 0.25,
+    "coverage": 0.5,
+    "semantic": 0.25,
+    "future": 0.1
+  },
+  "n_gram": 3,
+  "max_expansions": 20000
+}

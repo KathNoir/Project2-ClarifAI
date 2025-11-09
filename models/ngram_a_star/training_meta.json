@@ -1,0 +1,8 @@
+{
+  "language": "python",
+  "max_samples": 100000,
+  "beam_width": 5,
+  "target_length": 24,
+  "n_gram": 3,
+  "semantic_heuristic": true
+}
