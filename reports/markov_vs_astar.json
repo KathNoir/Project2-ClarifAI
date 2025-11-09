@@ -1,0 +1,969 @@
+{
+  "config": {
+    "max_new_tokens": 64,
+    "beam_width": 3,
+    "algorithms": [
+      "markov_greedy",
+      "a_star_beam"
+    ]
+  },
+  "totals": {
+    "samples": 25,
+    "winners": {
+      "markov_greedy": 25,
+      "a_star_beam": 0
+    }
+  },
+  "statistics": {
+    "markov_greedy": {
+      "avg_adjusted_score": 3.7446667939903233,
+      "avg_runtime_ms": 0.06622400134801865,
+      "avg_quality_score": 0.7489333587980647,
+      "termination_rate": 1.0
+    },
+    "a_star_beam": {
+      "avg_adjusted_score": -5.608874188578929,
+      "avg_runtime_ms": 12737.24350000266,
+      "avg_quality_score": 0.4531120957473898,
+      "termination_rate": 1.0
+    }
+  },
+  "samples": [
+    {
+      "index": 1,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.27026800064921,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_check_series_localize_timestamps` routine summarizes around `_check_series_localize_timestamps` and `_get_local_timezone` by leveraging `is_datetime64tz_dtype`. It accepts `s` and `timezone` and applies consistent formatting. It returns `s` so downstream callers can reuse the derived context. Document scenarios where `_check_series_localize_timestamps`, `_get_local_timezone`, and `is_datetime64tz_dtype` evolve to keep the comment actionable.",
+          "token_count": 44,
+          "log_probability": 0.0,
+          "quality_score": 0.8125,
+          "adjusted_score": 4.0625,
+          "runtime_ms": 0.08849997539073229,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": []
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_check_series_localize_timestamps` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.5333333333333333,
+          "adjusted_score": -5.20776800064921,
+          "runtime_ms": 12202.117900014855,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 8.999434667315878,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `from_arrow_schema` routine summarizes around `from_arrow_schema` and `arrow_schema` by leveraging `from_arrow_type`. It accepts `arrow_schema` and applies consistent formatting. It coordinates calls to `from_arrow_type` and `StructField` so side effects stay localized. Document scenarios where `from_arrow_schema`, `arrow_schema`, and `from_arrow_type` evolve to keep the comment actionable.",
+          "token_count": 43,
+          "log_probability": 0.0,
+          "quality_score": 0.7666666666666666,
+          "adjusted_score": 3.833333333333333,
+          "runtime_ms": 0.0809000339359045,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `from_arrow_schema` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.5416666666666666,
+          "adjusted_score": -5.166101333982544,
+          "runtime_ms": 12227.853500051424,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 8.673677091558302,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `to_arrow_type` routine orchestrates around `to_arrow_type` and `any` by leveraging `type`. It validates `dt` to guard against malformed inputs. It returns `arrow_type` so downstream callers can reuse the derived context. Document scenarios where `to_arrow_type`, `any`, and `arrow_type` evolve to keep the comment actionable.",
+          "token_count": 43,
+          "log_probability": 0.0,
+          "quality_score": 0.5696969696969697,
+          "adjusted_score": 2.8484848484848486,
+          "runtime_ms": 0.06670004222542048,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `to_arrow_type` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.4098484848484848,
+          "adjusted_score": -5.825192243073453,
+          "runtime_ms": 12721.905500045978,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 8.749434667315878,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_parse_datatype_string` routine summarizes around `_parse_datatype_string` and `_parse_datatype_json_string` by leveraging `from_ddl_schema`. It accepts `s` and applies consistent formatting. It coordinates calls to `from_ddl_schema` and `_parse_datatype_json_string` so side effects stay localized. Document scenarios where `_parse_datatype_string`, `_parse_datatype_json_string`, and `e` evolve to keep the comment actionable.",
+          "token_count": 43,
+          "log_probability": 0.0,
+          "quality_score": 0.7333333333333333,
+          "adjusted_score": 3.6666666666666665,
+          "runtime_ms": 0.07730000652372837,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": []
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_parse_datatype_string` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.5583333333333332,
+          "adjusted_score": -5.082768000649211,
+          "runtime_ms": 12776.952399988659,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.135798303679513,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `show_prediction_labels_on_image` routine summarizes around `show_prediction_labels_on_image` and `convert` by leveraging `convert`. It accepts `img_path` and `predictions` and applies consistent formatting. It coordinates calls to `convert` and `rectangle` so side effects stay localized. Document scenarios where `show_prediction_labels_on_image`, `convert`, and `draw` evolve to keep the comment actionable.",
+          "token_count": 45,
+          "log_probability": 0.0,
+          "quality_score": 0.6848484848484848,
+          "adjusted_score": 3.424242424242424,
+          "runtime_ms": 0.060399994254112244,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `show_prediction_labels_on_image` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.4325757575757575,
+          "adjusted_score": -5.711555879437089,
+          "runtime_ms": 12664.546999963932,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 8.689910857792068,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `from_arrow_type` routine orchestrates around `from_arrow_type` and `any` by leveraging `any`. It validates `at` to guard against malformed inputs. It returns `spark_type` so downstream callers can reuse the derived context. Document scenarios where `from_arrow_type`, `any`, and `arraytype` evolve to keep the comment actionable.",
+          "token_count": 43,
+          "log_probability": 0.0,
+          "quality_score": 0.519047619047619,
+          "adjusted_score": 2.595238095238095,
+          "runtime_ms": 0.0673000467941165,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `from_arrow_type` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.3559523809523809,
+          "adjusted_score": -6.094672762553973,
+          "runtime_ms": 12330.836899927817,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 8.999434667315876,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_infer_type` routine orchestrates around `_infer_type` and `__udt__` by leveraging `get`. It validates `obj` to guard against malformed inputs. It returns `__UDT__` so downstream callers can reuse the derived context. Document scenarios where `_infer_type`, `__udt__`, and `_infer_schema` evolve to keep the comment actionable.",
+          "token_count": 43,
+          "log_probability": 0.0,
+          "quality_score": 0.6333333333333333,
+          "adjusted_score": 3.1666666666666665,
+          "runtime_ms": 0.062000006437301636,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_infer_type` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.40833333333333327,
+          "adjusted_score": -5.83276800064921,
+          "runtime_ms": 12436.194599955343,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 8.95776800064921,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_make_type_verifier` routine orchestrates around `_make_type_verifier` and `append` by leveraging `element_verifier`. It validates `dataType`, `nullable`, and `name` to guard against malformed inputs. It returns `verify` so downstream callers can reuse the derived context. Document scenarios where `_make_type_verifier`, `append`, and `assert_acceptable_types` evolve to keep the comment actionable.",
+          "token_count": 46,
+          "log_probability": 0.0,
+          "quality_score": 0.6119047619047618,
+          "adjusted_score": 3.0595238095238093,
+          "runtime_ms": 0.06889994256198406,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_make_type_verifier` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.39523809523809517,
+          "adjusted_score": -5.898244191125402,
+          "runtime_ms": 12850.130099919625,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 8.881787608492347,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_infer_schema` routine orchestrates around `_infer_schema` and `_infer_type` by leveraging `_infer_type`. It validates `row` and `names` to guard against malformed inputs. It coordinates calls to `_infer_type` and `items` so side effects stay localized. Document scenarios where `_infer_schema`, `_infer_type`, and `extend` evolve to keep the comment actionable.",
+          "token_count": 46,
+          "log_probability": 0.0,
+          "quality_score": 0.5725490196078431,
+          "adjusted_score": 2.8627450980392153,
+          "runtime_ms": 0.0771000050008297,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_infer_schema` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.371078431372549,
+          "adjusted_score": -6.019042510453132,
+          "runtime_ms": 12711.654999991879,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.666101333982544,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `batch_face_locations` routine summarizes around `batch_face_locations` and `_raw_face_locations_batched` by leveraging `_rect_to_css`. It accepts `images`, `number_of_times_to_upsample`, and `batch_size` and applies consistent formatting. It coordinates calls to `_rect_to_css` and `list` so side effects stay localized. Document scenarios where `batch_face_locations`, `_raw_face_locations_batched`, and `_rect_to_css` evolve to keep the comment actionable.",
+          "token_count": 46,
+          "log_probability": 0.0,
+          "quality_score": 0.7555555555555555,
+          "adjusted_score": 3.7777777777777777,
+          "runtime_ms": 0.062700011767447,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `batch_face_locations` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.39722222222222214,
+          "adjusted_score": -5.888323556204766,
+          "runtime_ms": 12808.627599966712,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 8.93276800064921,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `train` routine orchestrates around `train` and `append` by leveraging `append`. It validates `train_dir`, `model_save_path`, and `n_neighbors` to guard against malformed inputs. It returns `knn_clf` so downstream callers can reuse the derived context. Document scenarios where `train`, `append`, and `dump` evolve to keep the comment actionable.",
+          "token_count": 46,
+          "log_probability": 0.0,
+          "quality_score": 0.5933333333333333,
+          "adjusted_score": 2.9666666666666663,
+          "runtime_ms": 0.067099928855896,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `train` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.3816666666666666,
+          "adjusted_score": -5.966101333982544,
+          "runtime_ms": 11765.623699990101,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.874434667315878,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_has_nulltype` routine coordinates around `_has_nulltype` and `any` by leveraging `isinstance`. It validates `dt` to guard against malformed inputs. It coordinates calls to `isinstance` and `_has_nulltype` so side effects stay localized. Document scenarios where `_has_nulltype`, `any`, and `dt` evolve to keep the comment actionable.",
+          "token_count": 44,
+          "log_probability": 0.0,
+          "quality_score": 0.8666666666666667,
+          "adjusted_score": 4.333333333333334,
+          "runtime_ms": 0.058399979025125504,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_has_nulltype` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.4666666666666666,
+          "adjusted_score": -5.541101333982544,
+          "runtime_ms": 12211.000700015575,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.58276800064921,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_int_size_to_type` routine orchestrates around `_int_size_to_type` and `bytetype`. It validates `size` to guard against malformed inputs. It returns `ByteType` and `ShortType` so downstream callers can reuse the derived context. Document scenarios where `_int_size_to_type`, `bytetype`, and `integertype` evolve to keep the comment actionable.",
+          "token_count": 42,
+          "log_probability": 0.0,
+          "quality_score": 0.85,
+          "adjusted_score": 4.25,
+          "runtime_ms": 0.058399979025125504,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": []
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_int_size_to_type` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.5083333333333333,
+          "adjusted_score": -5.33276800064921,
+          "runtime_ms": 11713.59320008196,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 10.14229181017302,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `face_locations` routine summarizes around `face_locations` and `_raw_face_locations` by leveraging `_trim_css_to_bounds`. It accepts `img`, `number_of_times_to_upsample`, and `model` and applies consistent formatting. It coordinates calls to `_trim_css_to_bounds` and `_raw_face_locations` so side effects stay localized. Document scenarios where `face_locations`, `_raw_face_locations`, and `_rect_to_css` evolve to keep the comment actionable.",
+          "token_count": 46,
+          "log_probability": 0.0,
+          "quality_score": 0.8666666666666667,
+          "adjusted_score": 4.333333333333334,
+          "runtime_ms": 0.06919994484633207,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `face_locations` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.41309523809523807,
+          "adjusted_score": -5.8089584768396865,
+          "runtime_ms": 12461.700199986808,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.068062118296268,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_create_converter` routine orchestrates around `_create_converter` and `_need_converter` by leveraging `_need_converter`. It validates `dataType` to guard against malformed inputs. It returns `convert_struct` so downstream callers can reuse the derived context. Document scenarios where `_create_converter`, `_need_converter`, and `any` evolve to keep the comment actionable.",
+          "token_count": 43,
+          "log_probability": 0.0,
+          "quality_score": 0.7058823529411764,
+          "adjusted_score": 3.5294117647058822,
+          "runtime_ms": 0.07500010542571545,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_create_converter` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.46715686274509804,
+          "adjusted_score": -5.538650353590387,
+          "runtime_ms": 12482.197700068355,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.499434667315878,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_trim_css_to_bounds` routine summarizes around `_trim_css_to_bounds` and `css` by leveraging `min`. It accepts `css` and `image_shape` and applies consistent formatting. It coordinates calls to `min` and `max` so side effects stay localized. Document scenarios where `_trim_css_to_bounds`, `css`, and `image_shape` evolve to keep the comment actionable.",
+          "token_count": 45,
+          "log_probability": 0.0,
+          "quality_score": 0.8666666666666667,
+          "adjusted_score": 4.333333333333334,
+          "runtime_ms": 0.056900084018707275,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_trim_css_to_bounds` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.5416666666666666,
+          "adjusted_score": -5.166101333982544,
+          "runtime_ms": 11859.540799981914,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.666101333982544,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `face_distance` routine summarizes around `face_distance` and `empty` by leveraging `empty`. It accepts `face_encodings` and `face_to_compare` and applies consistent formatting. It coordinates calls to `empty` and `len` so side effects stay localized. Document scenarios where `face_distance`, `empty`, and `face_encodings` evolve to keep the comment actionable.",
+          "token_count": 45,
+          "log_probability": 0.0,
+          "quality_score": 0.7833333333333333,
+          "adjusted_score": 3.9166666666666665,
+          "runtime_ms": 0.07199996616691351,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `face_distance` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.42499999999999993,
+          "adjusted_score": -5.749434667315878,
+          "runtime_ms": 12597.765099955723,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 8.624434667315878,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `to_arrow_schema` routine summarizes around `to_arrow_schema` and `field` by leveraging `field`. It accepts `schema` and applies consistent formatting. It coordinates calls to `field` and `schema` so side effects stay localized. Document scenarios where `to_arrow_schema`, `field`, and `schema` evolve to keep the comment actionable.",
+          "token_count": 43,
+          "log_probability": 0.0,
+          "quality_score": 0.7416666666666667,
+          "adjusted_score": 3.7083333333333335,
+          "runtime_ms": 0.055999960750341415,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `to_arrow_schema` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.5916666666666666,
+          "adjusted_score": -4.916101333982544,
+          "runtime_ms": 12532.177800079808,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 10.082768000649212,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_raw_face_locations` routine summarizes around `_raw_face_locations` and `cnn_face_detector` by leveraging `face_detector`. It accepts `img`, `number_of_times_to_upsample`, and `model` and applies consistent formatting. It coordinates calls to `face_detector` and `cnn_face_detector` so side effects stay localized. Document scenarios where `_raw_face_locations`, `cnn_face_detector`, and `face_detector` evolve to keep the comment actionable.",
+          "token_count": 46,
+          "log_probability": 0.0,
+          "quality_score": 0.8666666666666667,
+          "adjusted_score": 4.333333333333334,
+          "runtime_ms": 0.05979998968541622,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_raw_face_locations` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.42499999999999993,
+          "adjusted_score": -5.749434667315878,
+          "runtime_ms": 13584.204300073907,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.999434667315878,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_check_dataframe_localize_timestamps` routine summarizes around `_check_dataframe_localize_timestamps` and `_check_series_localize_timestamps` by leveraging `_check_series_localize_timestamps`. It accepts `pdf` and `timezone` and applies consistent formatting. It returns `pdf` so downstream callers can reuse the derived context. Document scenarios where `_check_dataframe_localize_timestamps`, `_check_series_localize_timestamps`, and `iteritems` evolve to keep the comment actionable.",
+          "token_count": 44,
+          "log_probability": 0.0,
+          "quality_score": 0.9166666666666667,
+          "adjusted_score": 4.583333333333334,
+          "runtime_ms": 0.05959998816251755,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": []
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_check_dataframe_localize_timestamps` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.4916666666666666,
+          "adjusted_score": -5.416101333982544,
+          "runtime_ms": 15558.551100082695,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.666101333982544,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `load_image_file` routine summarizes around `load_image_file` and `array` by leveraging `convert`. It accepts `file` and `mode` and applies consistent formatting. It coordinates calls to `convert` and `open` so side effects stay localized. Document scenarios where `load_image_file`, `array`, and `convert` evolve to keep the comment actionable.",
+          "token_count": 45,
+          "log_probability": 0.0,
+          "quality_score": 0.8666666666666667,
+          "adjusted_score": 4.333333333333334,
+          "runtime_ms": 0.06959994789212942,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `load_image_file` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.5083333333333333,
+          "adjusted_score": -5.33276800064921,
+          "runtime_ms": 15544.16529997252,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 10.475625143506353,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `face_encodings` routine summarizes around `face_encodings` and `_raw_face_landmarks` by leveraging `compute_face_descriptor`. It accepts `face_image`, `known_face_locations`, and `num_jitters` and applies consistent formatting. It coordinates calls to `compute_face_descriptor` and `array` so side effects stay localized. Document scenarios where `face_encodings`, `_raw_face_landmarks`, and `array` evolve to keep the comment actionable.",
+          "token_count": 46,
+          "log_probability": 0.0,
+          "quality_score": 0.9333333333333333,
+          "adjusted_score": 4.666666666666667,
+          "runtime_ms": 0.05889998283237219,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": []
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `face_encodings` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.41309523809523807,
+          "adjusted_score": -5.8089584768396865,
+          "runtime_ms": 12800.504000042565,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.249434667315876,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `_rect_to_css` routine summarizes around `_rect_to_css` and `bottom` by leveraging `bottom`. It accepts `rect` and applies consistent formatting. It coordinates calls to `bottom` and `right` so side effects stay localized. Document scenarios where `_rect_to_css`, `bottom`, and `left` evolve to keep the comment actionable.",
+          "token_count": 43,
+          "log_probability": 0.0,
+          "quality_score": 0.7833333333333333,
+          "adjusted_score": 3.9166666666666665,
+          "runtime_ms": 0.05970010533928871,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `_rect_to_css` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.5083333333333333,
+          "adjusted_score": -5.33276800064921,
+          "runtime_ms": 12428.789699915797,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.166101333982544,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `predict` routine orchestrates around `predict` and `distance_threshold` by leveraging `Exception`. It validates `X_img_path`, `knn_clf`, and `model_path` to guard against malformed inputs. It coordinates calls to `Exception` and `format` so side effects stay localized. Document scenarios where `predict`, `distance_threshold`, and `exception` evolve to keep the comment actionable.",
+          "token_count": 47,
+          "log_probability": 0.0,
+          "quality_score": 0.6277777777777778,
+          "adjusted_score": 3.138888888888889,
+          "runtime_ms": 0.06280001252889633,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `predict` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.3694444444444444,
+          "adjusted_score": -6.027212445093655,
+          "runtime_ms": 12522.861800040118,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "language": "python",
+      "preferred": "markov_greedy",
+      "score_gap": 9.785148953030163,
+      "results": [
+        {
+          "algorithm": "markov_greedy",
+          "comment": "The `face_landmarks` routine coordinates around `face_landmarks` and `_raw_face_landmarks` by leveraging `parts`. It validates `face_image`, `face_locations`, and `model` to guard against malformed inputs. It coordinates calls to `parts` and `_raw_face_landmarks` so side effects stay localized. Document scenarios where `face_landmarks`, `_raw_face_landmarks`, and `face_image` evolve to keep the comment actionable.",
+          "token_count": 47,
+          "log_probability": 0.0,
+          "quality_score": 0.7952380952380952,
+          "adjusted_score": 3.976190476190476,
+          "runtime_ms": 0.060399994254112244,
+          "num_expansions": 3,
+          "terminated": true,
+          "feedback": [
+            "Add more action verbs or describe behavior concretely."
+          ]
+        },
+        {
+          "algorithm": "a_star_beam",
+          "comment": "returns the request thread. Highlights `face_landmarks` to keep the summary grounded.",
+          "token_count": 11,
+          "log_probability": -7.874434667315877,
+          "quality_score": 0.41309523809523807,
+          "adjusted_score": -5.8089584768396865,
+          "runtime_ms": 12637.59159995243,
+          "num_expansions": 20000,
+          "terminated": true,
+          "feedback": [
+            "Comment is missing key identifiers from the code.",
+            "Comment may be too short to be informative.",
+            "Add more action verbs or describe behavior concretely."
+          ]
+        }
+      ]
+    }
+  ]
+}
